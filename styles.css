@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* colors */
+
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal:  hsl(24, 5%, 18%);
+
+    /* fonts  */
+    --font-size: 16px;
+    --font-family-young: 'Young Serif', serif;
+    --font-family-outfit: 'Outfit', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --font-weight-extra-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size);
+    background-color: var(--color-eggshell);
+    color:var(--dark-charcoal);
+    width:100vw;
+    min-height: 100vh;
+    height: auto;
+}
+
+h1 , h2{
+    font-family: var(--font-family-young);
+    font-weight: var(--font-weight-regular);
+}
+
+#recipe-card {
+    background-color: var(--white);
+    max-width:700px;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+#recipe-card  * {
+    margin-bottom: 18px;
+}
+
+#recipe-card > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#recipe-card > p {
+    color: var(--wenge-brown);
+    font-size: 16px;
+}
+
+#recipe-card__preparation {
+    background-color: var(--rose-white);
+    padding: 20px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+#recipe-card__preparation > h3 , li::marker {
+    color: var(--dark-raspberry);
+}
+
+h2 , li::marker {
+    color: var(--color-nutmeg);
+}
+
+hr{
+    border: 0.5px solid var(--light-grey);
+    margin:20px 0;
+}
+.steps > li{
+    color: var(--wenge-brown);
+    font-size: calc(var(--font-size) * 0.9);
+    word-spacing: 2px;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.steps > li > strong {
+    margin-right: 3px;
+}
+
+@media (width: 375px){
+    
+}
+
